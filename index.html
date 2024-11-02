@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Habilidades</title>
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            color: #f88181;
+            background-color: #ffffff;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Estilos de la barra lateral */
+        .sidebar {
+            width: 250px;
+            background-color: #fc4a4a;
+            color: #fdfdfd;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .back-to-home {
+            color: #f7f7f7;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: #3f3c3c;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar .back-to-home:hover {
+            background-color: #000000;
+        }
+
+        .sidebar nav a {
+            color: #f7f7f7;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-bottom: 65px;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .sidebar nav a:hover {
+            background-color: #3f3c3c;
+        }
+
+        /* Estilos de la sección de contenido */
+        .content {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .content section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(245, 139, 139, 0.863);
+            margin-bottom: 30px;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .content h2 {
+            font-size: 1.8em;
+            color: #fc4a4a;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #3a3838;
+        }
+
+        /* Clase activa para resaltar la sección */
+        .active {
+            background-color: #ee9b9b !important;
+            transition: background-color 0.5s ease;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <h1><B>MIS HABILIDADES</B></h1>
+
+        <nav>
+            <a href="#trabajo-equipo"><b>Trabajo en Equipo</b></a>
+            <a href="#responsabilidad"><b>Responsabilidad y Compromiso</b></a>
+            <a href="#organizacion"><b>Planificación y Organización</b></a>
+            <a href="#comunicacion"><b>Comunicación y Escucha Activa</b></a>
+            <a href="#resolucion"><b>Resolución de Problemas</b></a>
+            <a href="#adaptabilidad"><b>Adaptabilidad y Flexibilidad</b></a>
+            <a href="#conocimientos"><b>Conocimientos Técnicos</b></a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <section id="trabajo-equipo">
+            <p>Me gusta trabajar en equipo y creo que la cooperación es fundamental para conseguir buenos objetivos. Siempre busco crear un ambiente de confianza en el que cada miembro del equipo pueda expresar sus ideas libremente. La comunicación y la empatía son fundamentales en mi enfoque, por lo que no sólo puedo compartir conocimientos, sino también aprender de los demás y contribuir a la dinámica de equipos de alto rendimiento.</p>
+        </section>
+
+        <section id="responsabilidad">
+            <p>La responsabilidad es uno de mis valores más importantes. Tomo todos los compromisos en serio, soy consciente del impacto de mis acciones y decisiones y siempre me esfuerzo por alcanzar mis expectativas en todo lo que hago. Esta dedicación me ha permitido ganarme la confianza de mis compañeros y construir relaciones basadas en la confianza y el respeto mutuo.</p>
+        </section>
+
+        <section id="organizacion">
+            <p>La capacidad de organización es una de mis mayores fortalezas. Soy una persona organizada que planifica cuidadosamente para aprovechar al máximo el tiempo y los recursos. Me gusta establecer prioridades en mis obligaciones que me permitan ser eficiente y completarlas perfectamente a tiempo. Esta habilidad también me ayuda a manejar múltiples responsabilidades sin perder el foco en detalles importantes.</p>
+        </section>
+
+        <section id="comunicacion">
+            <p>Creo que la comunicación es la clave para cualquier interacción exitosa. Intento expresar mis ideas de forma clara y respetuosa. Además, practico la escucha activa porque creo que escuchar y comprender a los demás es esencial para una comunicación eficaz. Esta habilidad me ayuda a construir relaciones de calidad, resolver conflictos y crear un ambiente de colaboración.</p>
+        </section>
+
+        <section id="resolucion">
+            <p>Ante un problema o situación compleja, tengo la capacidad de analizar cada elemento y ofrecer alternativas de solución. Soy una persona que no se rinde fácilmente ante los obstáculos y supera los desafíos de forma lógica y creativa. Este pensamiento crítico me permite considerar los pros y los contras de cada opción y tomar decisiones que busquen el mejor resultado.</p>
+        </section>
+
+        <section id="adaptabilidad">
+            <p>Sé que el cambio es constante en la vida, y por ello me considero una persona adaptable que puede adaptarse rápidamente a nuevas situaciones y entornos. Creo que todo cambio es una oportunidad para aprender y crecer. Esta adaptabilidad me ha permitido afrontar diferentes experiencias y aprender a pensar en la resiliencia y la flexibilidad como herramientas imprescindibles en cualquier ámbito.</p>
+        </section>
+
+        <section id="conocimientos">
+            <p>Además de las habilidades interpersonales, también tengo conocimientos en  herramientas tecnológicas que me permiten resolver problemas de forma analítica. Tengo experiencia usando Matlab para análisis y simulación de datos, y usando PSeInt para desarrollar algoritmos de pseudocódigo lo que me ha ayudado a fortalecer mi pensamiento lógico. También he utilizado Visual Studio Code en HTML, que permite diseñar y modificar interfaces web de forma rudimentaria. Estos programas han despertado mi interés en la programación y como esta podría ayudar en todos los campos, siempre estoy abierto a aprender nuevas tecnologías porque creo que es importante mantenerse al día con las últimas novedades del mundo en constante evolución.</p>
+        </section>
+    </main> 
+    <script>
+        // Selecciona todos los enlaces en la barra lateral
+        const navLinks = document.querySelectorAll('.sidebar nav a');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+                
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                document.querySelectorAll('.content section').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                targetSection.classList.add('active');
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                setTimeout(() => {
+                    targetSection.classList.remove('active');
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
